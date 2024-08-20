@@ -1,0 +1,16 @@
+# Fichiers de base Django
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+static/
+
+# Environnement virtuel
+venv/
+.env
+
+# Configuration de PyCharm
+.idea/
+
+# Dépendances
+.venv/
