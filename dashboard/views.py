@@ -74,3 +74,6 @@ def generate_report(request):
 def home_view(request):
     return render(request, 'home.html')  # Créer un template home.html ou en utiliser un existant
 
+
+def some_other_view(request):
+    return render(request, 'dashboard/Upload.html')  # Exemple de vue pour un autre template
