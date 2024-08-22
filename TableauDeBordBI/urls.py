@@ -4,6 +4,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),  # URL pour l'interface d'administration Django
-    path('', include('dashboard.urls')),  # Inclure les routes définies dans 'dashboard/urls.py'
+    path('admin/', admin.site.urls),
+    path('dashboard/', include('dashboard.urls')),  # Inclure les URLs du module 'dashboard'
 ]
