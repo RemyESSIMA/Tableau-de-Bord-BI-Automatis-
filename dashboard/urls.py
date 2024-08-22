@@ -1,7 +1,7 @@
 # dashboard/urls.py  hhhhh
 
 from django.urls import path
-from .views import upload_file, dashboard_view, generate_report
+from dashboard.views import upload_file, dashboard_view, generate_report
 
 urlpatterns = [
     path('upload/', upload_file, name='upload_file'),  # Route pour le formulaire d'upload

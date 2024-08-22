@@ -7,6 +7,7 @@ import plotly.express as px
 from io import BytesIO
 from matplotlib.backends.backend_pdf import PdfPages
 import matplotlib.pyplot as plt
+from django.shortcuts import render
 
 
 # Vue pour gérer l'upload de fichiers
@@ -69,3 +70,7 @@ def generate_report(request):
         return HttpResponse(buffer, as_attachment=True, content_type='application/pdf')
 
     return HttpResponse("Aucune donnée disponible pour générer le rapport.")
+
+def home_view(request):
+    return render(request, 'home.html')  # Créer un template home.html ou en utiliser un existant
+

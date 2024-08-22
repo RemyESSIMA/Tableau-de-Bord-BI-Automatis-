@@ -51,11 +51,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'TableauDeBordBI.urls'
 
+# TableauDeBordBI/settings.py
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
-        ,
+        'DIRS': [BASE_DIR / 'templates'],  # Ajoutez votre répertoire de templates ici
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -67,6 +68,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'TableauDeBordBI.wsgi.application'
 
