@@ -8,6 +8,5 @@ urlpatterns = [
     path('dashboard/', dashboard_view, name='dashboard_view'),  # Route pour le tableau de bord
     path('report/', generate_report, name='generate_report'),  # Route pour générer le rapport PDF
     path('', home_view, name='home'),  # Assurez-vous qu'une vue existe
-    path('some_other_path/', some_other_view, name='some_other_view'),  # Exemple d'une autre vue
 
 ]
