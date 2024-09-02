@@ -75,3 +75,5 @@ def home_view(request):
     return render(request, 'home.html')  # Créer un template home.html ou en utiliser un existant
 
 
+def some_other_view(request):
+    return HttpResponse("Hello from some other view!")
